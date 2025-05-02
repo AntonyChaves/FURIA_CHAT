@@ -1,6 +1,6 @@
 //Criando objeto que irá se conectar com o servidor Web Socket utilizando a URL configurada no BackEnd
 const stompClient = new StompJs.Client({
-    brokerURL: 'ws://' + window.location.host + '/furia-chat'
+    brokerURL: 'wss://' + window.location.host + '/furia-chat'
 });
 
 //Mantendo conexão com o servidor e recebendo e organizando qualquer mensagem que ele envie
